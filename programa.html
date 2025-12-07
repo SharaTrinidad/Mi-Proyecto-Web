@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Programa académico de la Facultad de Ciencias Sociales - Plan de estudios, perfil del egresado y más">
+    <title>Programa Académico | Facultad de Ciencias Sociales</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/accesibilidad.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Favicon -->
+     <link rel="icon" type="image/svg+xml" href="img/imagesvg.svg">
+</head>
+<body>
+    <!-- Skip link para accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <!-- Navegación principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" aria-label="Navegación principal" tabindex="-1">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="material-icons" aria-hidden="true">school</span>
+                Facultad Ciencias Sociales
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <!-- Enlaces del menú -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="programa.html">Programa Académico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Admisión y Contacto</a>
+                    </li>
+                    
+                </ul>
+
+                <!-- Botones de accesibilidad -->
+                <div class="d-flex align-items-center ms-lg-3 gap-2 mt-3 mt-lg-0">
+
+                    <!-- Alto contraste -->
+                    <button id="altoContraste" class="btn btn-outline-light" aria-label="Activar alto contraste">
+                        <span class="material-icons" aria-hidden="true">contrast</span>
+                    </button>
+
+                    <!-- Modo dislexia -->
+                    <button id="modoDislexia" class="btn btn-outline-light" aria-label="Activar modo dislexia">
+                        <span class="material-icons" aria-hidden="true">font_download</span>
+                    </button>
+
+                    <!-- Reducir animaciones -->
+                    <button id="reducirAnimaciones" class="btn btn-outline-light" aria-label="Reducir animaciones">
+                        <span class="material-icons" aria-hidden="true">motion_photos_off</span>
+                    </button>
+
+                    <!-- Zoom de texto -->
+                    <button id="zoomTexto" class="btn btn-outline-light" aria-label="Aumentar tamaño del texto">
+                        <span class="material-icons" aria-hidden="true">zoom_in</span>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    
+    <!-- Contenido principal -->
+    <main id="main-content" class="container mt-5 pt-4" tabindex="-1">
+
+    <!-- Encabezado de página -->
+        <header class="mb-5 text-center" aria-labelledby="programa-heading">
+            <h1 id="programa-heading" class="display-4 text-primary mb-3">Programa Académico</h1>
+            <p class="lead">Licenciatura en Ciencias Sociales con Enfoque Interdisciplinario</p>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Duración</h3>
+                            <p class="card-text">4 años (8 semestres)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Modalidad</h3>
+                            <p class="card-text">Presencial y Semi-presencial</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Créditos</h3>
+                            <p class="card-text">240 créditos académicos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Sección de perfil del egresado -->
+        <section class="mb-5" aria-labelledby="perfil-heading">
+            <h2 id="perfil-heading" class="mb-4">Perfil del Egresado</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Conocimientos</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Teorías sociales contemporáneas</li>
+                                <li class="list-group-item">Metodologías de investigación cualitativa y cuantitativa</li>
+                                <li class="list-group-item">Análisis de políticas públicas</li>
+                                <li class="list-group-item">Estudios culturales y antropológicos</li>
+                                <li class="list-group-item">Dinámicas sociales y económicas globales</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Habilidades</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Diseño y ejecución de proyectos de investigación social</li>
+                                <li class="list-group-item">Análisis crítico de problemáticas sociales</li>
+                                <li class="list-group-item">Mediación y resolución de conflictos</li>
+                                <li class="list-group-item">Comunicación intercultural efectiva</li>
+                                <li class="list-group-item">Uso de tecnologías para el análisis social</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Plan de estudios -->
+        <section class="mb-5" aria-labelledby="plan-estudios-heading">
+            <h2 id="plan-estudios-heading" class="mb-4">Plan de Estudios</h2>
+            
+            <!-- Acordeón para semestres -->
+            <div class="accordion" id="accordionPlan">
+                <!-- Semestre 1 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Semestre 1 - Fundamentos
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse show" 
+                         aria-labelledby="headingOne" data-bs-parent="#accordionPlan">
+                        <div class="accordion-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <caption class="visually-hidden">Materias del primer semestre</caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Materia</th>
+                                            <th scope="col">Créditos</th>
+                                            <th scope="col">Horas semanales</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Introducción a las Ciencias Sociales</td>
+                                            <td>6</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Historia del Pensamiento Social</td>
+                                            <td>6</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Metodología de la Investigación I</td>
+                                            <td>6</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Estadística Social Básica</td>
+                                            <td>6</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Antropología General</td>
+                                            <td>6</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Semestre 2 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Semestre 2 - Teorías Sociales
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse" 
+                         aria-labelledby="headingTwo" data-bs-parent="#accordionPlan">
+                        <div class="accordion-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <caption class="visually-hidden">Materias del segundo semestre</caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Materia</th>
+                                            <th scope="col">Créditos</th>
+                                            <th scope="col">Horas semanales</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Teoría Sociológica Clásica</td>
+                                            <td>6</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Psicología Social</td>
+                                            <td>6</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Metodología de la Investigación II</td>
+                                            <td>6</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Economía Política</td>
+                                            <td>6</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Antropología Cultural</td>
+                                            <td>6</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Semestre 3 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Semestre 3 - Análisis Social
+                        </button>
+                    </h3>
+                    <div id="collapseThree" class="accordion-collapse collapse" 
+                         aria-labelledby="headingThree" data-bs-parent="#accordionPlan">
+                        <div class="accordion-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <caption class="visually-hidden">Materias del tercer semestre</caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Materia</th>
+                                            <th scope="col">Créditos</th>
+                                            <th scope="col">Horas semanales</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Teoría Sociológica Contemporánea</td>
+                                            <td>6</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Análisis de Datos Sociales</td>
+                                            <td>6</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Políticas Públicas I</td>
+                                            <td>6</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sociología del Género</td>
+                                            <td>6</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Electiva I</td>
+                                            <td>6</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-4">
+                <p class="small text-muted">* El plan completo incluye 8 semestres. Para ver el plan completo, descarga el documento oficial.</p>
+                <a href="#" class="btn btn-outline-primary">
+                    <span class="material-icons align-middle" aria-hidden="true">download</span>
+                    Descargar Plan Completo (PDF)
+                </a>
+            </div>
+        </section>
+        
+        <!-- Líneas de investigación -->
+        <section class="mb-5" aria-labelledby="investigacion-heading">
+            <h2 id="investigacion-heading" class="mb-4">Líneas de Investigación</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-primary">
+                        <div class="card-body">
+                            <h3 class="h5 card-title text-primary">Desigualdad y Movilidad Social</h3>
+                            <p class="card-text">Estudio de las estructuras de desigualdad, mecanismos de movilidad social y políticas redistributivas.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-light text-dark me-2">Sociología</span>
+                                <span class="badge bg-light text-dark">Economía</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-primary">
+                        <div class="card-body">
+                            <h3 class="h5 card-title text-primary">Cultura y Identidad</h3>
+                            <p class="card-text">Análisis de procesos culturales, construcción de identidades y diversidad en sociedades contemporáneas.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-light text-dark me-2">Antropología</span>
+                                <span class="badge bg-light text-dark">Estudios Culturales</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-primary">
+                        <div class="card-body">
+                            <h3 class="h5 card-title text-primary">Política y Sociedad Civil</h3>
+                            <p class="card-text">Investigación sobre participación ciudadana, movimientos sociales y gobernanza democrática.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-light text-dark me-2">Ciencia Política</span>
+                                <span class="badge bg-light text-dark">Sociología Política</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Campo laboral -->
+        <section class="mb-5" aria-labelledby="campo-laboral-heading">
+            <h2 id="campo-laboral-heading" class="mb-4">Campo Laboral</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Sector Público</h3>
+                            <ul>
+                                <li>Análisis y diseño de políticas públicas</li>
+                                <li>Investigación social en organismos estatales</li>
+                                <li>Evaluación de programas sociales</li>
+                                <li>Asesoría en ministerios y secretarías</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Sector Privado</h3>
+                            <ul>
+                                <li>Investigación de mercado y opinión pública</li>
+                                <li>Responsabilidad social empresarial</li>
+                                <li>Gestión de recursos humanos</li>
+                                <li>Consultoría organizacional</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Organizaciones No Gubernamentales</h3>
+                            <ul>
+                                <li>Diseño y evaluación de proyectos sociales</li>
+                                <li>Cooperación internacional</li>
+                                <li>Desarrollo comunitario</li>
+                                <li>Derechos humanos y equidad</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Academia</h3>
+                            <ul>
+                                <li>Docencia e investigación universitaria</li>
+                                <li>Centros de estudio e investigación</li>
+                                <li>Publicación académica</li>
+                                <li>Formación de investigadores</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Llamada a la acción -->
+        <section class="bg-light p-5 rounded mb-5 text-center" aria-labelledby="programa-cta-heading">
+            <h2 id="programa-cta-heading" class="mb-4">¿Te interesa nuestro programa?</h2>
+            <p class="lead mb-4">Comienza tu proceso de admisión ahora mismo</p>
+            <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+                <a href="contacto.html" class="btn btn-primary btn-lg">Solicitar admisión</a>
+                <a href="contacto.html#preguntas-frecuentes" class="btn btn-outline-primary btn-lg">Ver preguntas frecuentes</a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white py-5" tabindex="-1">
+
+        <div class="container">
+            <div class="row">
+
+                <!-- Columna 1 -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h3 class="h5">Facultad de Ciencias Sociales</h3>
+                    <p class="small">
+                        Formando agentes de cambio social desde 1995. 
+                        Comprometidos con la excelencia académica y la transformación social.
+                    </p>
+
+                    <!-- Redes sociales corregidas -->
+                    <div class="mt-3 d-flex align-items-center gap-3">
+                        <a href="#" class="text-white fs-4" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white fs-4" aria-label="Twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="text-white fs-4" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white fs-4" aria-label="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna 2 -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="h5">Enlaces rápidos</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50 text-decoration-none">Inicio</a></li>
+                        <li><a href="programa.html" class="text-white-50 text-decoration-none">Programa Académico</a></li>
+                        <li><a href="contacto.html" class="text-white-50 text-decoration-none">Admisión y Contacto</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Biblioteca Digital</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Portal del Estudiante</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3 -->
+                <div class="col-md-4">
+                    <h4 class="h5">Información de contacto</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            Av. Universidad 123, Ciudad Universitaria
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-telephone-fill me-2"></i>
+                            (123) 456-7890
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            info@facultadcsociales.edu
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-clock-fill me-2"></i>
+                            Lunes a Viernes: 8:00 AM - 6:00 PM
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="bg-secondary my-4">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="small mb-0">© 2023 Facultad de Ciencias Sociales. Todos los derechos reservados.</p>
+                </div>
+
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 text-decoration-none small me-3">Política de privacidad</a>
+                    <a href="#" class="text-white-50 text-decoration-none small me-3">Términos de uso</a>
+                    <a href="#" class="text-white-50 text-decoration-none small">Accesibilidad</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/validacion.js"></script>
+    <script src="css/accesibilidad.css"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+/* ============================================================
+   VARIABLES PRINCIPALES
+   ============================================================ */
+:root {
+    --color-primario: #003366;
+    --color-secundario: #005a99;
+    --color-accento: #0099cc;
+    --color-texto: #333;
+    --color-fondo: #f8f9fa;
+    --color-blanco: #ffffff;
+
+    --fuente-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ============================================================
+   BASE
+   ============================================================ */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-base);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+/* ============================================================
+   SKIP LINK (ACCESIBILIDAD)
+   ============================================================ */
+.skip-link {
+    position: absolute;
+    left: 0;
+    top: -40px;
+    background: var(--color-primario);
+    color: var(--color-blanco);
+    padding: 10px 20px;
+    z-index: 1000;
+    transition: top .3s;
+    border-radius: 0 0 6px 0;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* ============================================================
+   NAVBAR
+   ============================================================ */
+.navbar {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-accento);
+}
+
+/* ============================================================
+   BOTONES
+   ============================================================ */
+.btn-primary {
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* ============================================================
+   FOCUS ACCESIBLE
+   ============================================================ */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 3px solid var(--color-accento) !important;
+    outline-offset: 2px;
+}
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+.card {
+    border: none;
+    transition: .3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+/* ============================================================
+   TITULOS / SECCIONES
+   ============================================================ */
+h1, h2, h3 {
+    color: var(--color-primario);
+    font-weight: 700;
+}
+
+/* ============================================================
+   TIMELINE (ADMISIÓN)
+   ============================================================ */
+.timeline-admision {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline-admision::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--color-accento);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 2px solid var(--color-accento);
+    background: var(--color-blanco);
+    color: var(--color-accento);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-content h4 {
+    margin-bottom: .3rem;
+    color: var(--color-primario);
+}
+
+/* ============================================================
+   TABLAS
+   ============================================================ */
+.table-responsive {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table thead {
+    background: var(--color-primario);
+    color: var(--color-blanco);
+}
+
+/* ============================================================
+   ACORDEÓN
+   ============================================================ */
+.accordion-button:not(.collapsed) {
+    background-color: rgba(0, 51, 102, 0.12);
+    color: var(--color-primario);
+    font-weight: bold;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 3px rgba(0,153,204,0.3);
+}
+
+/* FORMULARIOS */
+.form-label {
+    font-weight: 600;
+    color: var(--color-primario);
+}
+
+.form-control:focus {
+    border-color: var(--color-accento);
+    box-shadow: 0 0 0 3px rgba(0,153,204,0.25);
+}
+
+.form-control.is-valid {
+    border-color: #198754;
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+}
+
+/* FOOTER */
+footer a:hover {
+    color: var(--color-blanco);
+    text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+    .display-4 {
+        font-size: 2.6rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-brand {
+        font-size: 1.6rem;
+    }
+}

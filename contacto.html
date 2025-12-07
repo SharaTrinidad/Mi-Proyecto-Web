@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto y admisión - Facultad de Ciencias Sociales">
+    <title>Admisión y Contacto | Facultad de Ciencias Sociales</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/accesibilidad.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Favicon -->
+     <link rel="icon" type="image/svg+xml" href="img/imagesvg.svg">
+
+</head>
+<body>
+    <!-- Skip link para accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <!-- Navegación principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" tabindex="-1">
+
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="material-icons" aria-hidden="true">school</span>
+                Facultad Ciencias Sociales
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <!-- Enlaces del menú -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="programa.html">Programa Académico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contacto.html">Admisión y Contacto</a>
+                    </li>
+                </ul>
+
+                <!-- Botones de accesibilidad -->
+                <div class="d-flex align-items-center ms-lg-3 gap-2 mt-3 mt-lg-0">
+
+                    <!-- Alto contraste -->
+                    <button id="altoContraste" class="btn btn-outline-light" aria-label="Activar alto contraste">
+                        <span class="material-icons" aria-hidden="true">contrast</span>
+                    </button>
+
+                    <!-- Modo dislexia -->
+                    <button id="modoDislexia" class="btn btn-outline-light" aria-label="Activar modo dislexia">
+                        <span class="material-icons" aria-hidden="true">font_download</span>
+                    </button>
+
+                    <!-- Reducir animaciones -->
+                    <button id="reducirAnimaciones" class="btn btn-outline-light" aria-label="Reducir animaciones">
+                        <span class="material-icons" aria-hidden="true">motion_photos_off</span>
+                    </button>
+
+                    <!-- Zoom de texto -->
+                    <button id="zoomTexto" class="btn btn-outline-light" aria-label="Aumentar tamaño del texto">
+                        <span class="material-icons" aria-hidden="true">zoom_in</span>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    
+    <!-- Contenido principal -->
+    <main id="main-content" class="container mt-5 pt-4" tabindex="-1">
+
+    <!-- Encabezado de página -->
+        <header class="mb-5 text-center" aria-labelledby="contacto-heading">
+            <h1 id="contacto-heading" class="display-4 text-primary mb-3">Admisión y Contacto</h1>
+            <p class="lead">Estamos aquí para ayudarte en tu proceso de admisión y responder todas tus preguntas</p>
+        </header>
+        
+        <!-- Proceso de admisión -->
+        <section class="mb-5" aria-labelledby="admission-heading">
+            <h2 id="admission-heading" class="mb-4">Proceso de Admisión</h2>
+            
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                    <div class="card border-primary">
+                        <div class="card-body">
+                            <h3 class="h5 card-title text-primary mb-3">Pasos para aplicar</h3>
+                            
+                            <div class="timeline-admision">
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <span class="material-icons" aria-hidden="true">description</span>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h4> 1. Solicitud en línea</h4>
+                                        <p>Completa el formulario de solicitud en nuestra página web o en nuestras oficinas.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <span class="material-icons" aria-hidden="true">attach_file</span>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h4>2. Documentación requerida</h4>
+                                        <p>Envía los documentos solicitados (certificado de estudios, identificación, etc.).</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <span class="material-icons" aria-hidden="true">quiz</span>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h4>3. Evaluación académica</h4>
+                                        <p>Presenta el examen de admisión y participa en la entrevista personal.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <span class="material-icons" aria-hidden="true">check_circle</span>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <h4>4. Resultados y matrícula</h4>
+                                        <p>Recibe tu resultado y completa el proceso de matrícula si fuiste aceptado.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Próximas fechas</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <strong>Cierre de solicitudes:</strong><br>
+                                    15 de agosto 2023
+                                </li>
+                                <li class="mb-3">
+                                    <strong>Examen de admisión:</strong><br>
+                                    25 de agosto 2023
+                                </li>
+                                <li class="mb-3">
+                                    <strong>Publicación de resultados:</strong><br>
+                                    1 de septiembre 2023
+                                </li>
+                                <li class="mb-3">
+                                    <strong>Inicio de clases:</strong><br>
+                                    15 de septiembre 2023
+                                </li>
+                            </ul>
+                            <div class="alert alert-info" role="alert">
+                                <span class="material-icons align-middle" aria-hidden="true">info</span>
+                                Becas disponibles para estudiantes destacados
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Formulario de contacto -->
+        <section class="mb-5" aria-labelledby="formulario-heading">
+            <h2 id="formulario-heading" class="mb-4">Formulario de Contacto</h2>
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text mb-4">¿Tienes preguntas sobre el programa, admisión o necesitas más información? Envíanos un mensaje y te responderemos en un plazo máximo de 48 horas.</p>
+                            
+                            <form id="formularioContacto" novalidate>
+                                <div id="mensajeFormulario"></div>
+                                
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="nombre" class="form-label">Nombre completo *</label>
+                                        <input type="text" class="form-control" id="nombre" required
+                                               aria-required="true" aria-describedby="nombreHelp">
+                                        <div id="nombreHelp" class="form-text">Ingresa tu nombre y apellidos</div>
+                                        <div class="invalid-feedback">Por favor, ingresa tu nombre completo</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Correo electrónico *</label>
+                                        <input type="email" class="form-control" id="email" required
+                                               aria-required="true" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">Ejemplo: nombre@dominio.com</div>
+                                        <div class="invalid-feedback">Por favor, ingresa un correo electrónico válido</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="telefono" class="form-label">Teléfono</label>
+                                        <input type="tel" class="form-control" id="telefono"
+                                               aria-describedby="telefonoHelp">
+                                        <div id="telefonoHelp" class="form-text">Opcional, incluye código de área</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="asunto" class="form-label">Asunto *</label>
+                                        <select class="form-select" id="asunto" required aria-required="true">
+                                            <option value="" selected disabled>Selecciona un asunto</option>
+                                            <option value="admision">Información sobre admisión</option>
+                                            <option value="programa">Consultas sobre el programa</option>
+                                            <option value="becas">Información sobre becas</option>
+                                            <option value="visita">Solicitud de visita guiada</option>
+                                            <option value="otro">Otro</option>
+                                        </select>
+                                        <div class="invalid-feedback">Por favor, selecciona un asunto</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="mensaje" class="form-label">Mensaje *</label>
+                                    <textarea class="form-control" id="mensaje" rows="5" required
+                                              aria-required="true" aria-describedby="mensajeHelp"></textarea>
+                                    <div id="mensajeHelp" class="form-text">Describe tu consulta o solicitud en detalle</div>
+                                    <div class="invalid-feedback">Por favor, ingresa tu mensaje</div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="newsletter" checked>
+                                        <label class="form-check-label" for="newsletter">
+                                            Deseo recibir información sobre eventos, talleres y novedades del programa
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="privacidad" required
+                                               aria-required="true">
+                                        <label class="form-check-label" for="privacidad">
+                                            He leído y acepto la <a href="#" class="text-primary">política de privacidad</a> *
+                                        </label>
+                                        <div class="invalid-feedback">Debes aceptar la política de privacidad</div>
+                                    </div>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <span class="material-icons align-middle" aria-hidden="true">send</span>
+                                    Enviar mensaje
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Información de contacto</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <span class="material-icons align-middle text-primary me-2" aria-hidden="true">place</span>
+                                    <strong>Dirección:</strong><br>
+                                    Av. Universidad 123,<br>
+                                    Ciudad Universitaria
+                                </li>
+                                <li class="mb-3">
+                                    <span class="material-icons align-middle text-primary me-2" aria-hidden="true">phone</span>
+                                    <strong>Teléfono:</strong><br>
+                                    (123) 456-7890
+                                </li>
+                                <li class="mb-3">
+                                    <span class="material-icons align-middle text-primary me-2" aria-hidden="true">email</span>
+                                    <strong>Email:</strong><br>
+                                    admisiones@facultadcsociales.edu
+                                </li>
+                                <li class="mb-3">
+                                    <span class="material-icons align-middle text-primary me-2" aria-hidden="true">access_time</span>
+                                    <strong>Horario de atención:</strong><br>
+                                    Lunes a Viernes: 8:00 AM - 6:00 PM<br>
+                                    Sábados: 9:00 AM - 1:00 PM
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Solicitar cita</h3>
+                            <p>¿Prefieres una atención personalizada? Agenda una cita con nuestro equipo de admisiones.</p>
+                            <a href="#" class="btn btn-outline-primary w-100">
+                                <span class="material-icons align-middle" aria-hidden="true">calendar_today</span>
+                                Agendar cita
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Preguntas frecuentes -->
+        <section class="mb-5" id="preguntas-frecuentes" aria-labelledby="faq-heading">
+            <h2 id="faq-heading" class="mb-4">Preguntas Frecuentes</h2>
+            
+            <div class="accordion" id="accordionFAQ">
+                <!-- Pregunta 1 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faq-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#faq-collapseOne" aria-expanded="true" aria-controls="faq-collapseOne">
+                            ¿Cuáles son los requisitos de admisión?
+                        </button>
+                    </h3>
+                    <div id="faq-collapseOne" class="accordion-collapse collapse show" 
+                         aria-labelledby="faq-headingOne" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            <p>Los requisitos básicos son:</p>
+                            <ul>
+                                <li>Certificado de bachillerato o equivalente</li>
+                                <li>Documento de identificación vigente</li>
+                                <li>Presentar y aprobar el examen de admisión</li>
+                                <li>Participar en la entrevista personal</li>
+                                <li>Completar el formulario de solicitud</li>
+                            </ul>
+                            <p>Estudiantes internacionales deben presentar documentación adicional.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 2 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faq-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#faq-collapseTwo" aria-expanded="false" aria-controls="faq-collapseTwo">
+                            ¿Hay becas o ayudas financieras disponibles?
+                        </button>
+                    </h3>
+                    <div id="faq-collapseTwo" class="accordion-collapse collapse" 
+                         aria-labelledby="faq-headingTwo" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            <p>Sí, ofrecemos varios tipos de ayuda financiera:</p>
+                            <ul>
+                                <li><strong>Becas por excelencia académica:</strong> Hasta 100% de descuento</li>
+                                <li><strong>Becas socioeconómicas:</strong> Según situación económica familiar</li>
+                                <li><strong>Becas deportivas y culturales:</strong> Para talentos destacados</li>
+                                <li><strong>Créditos educativos:</strong> Convenios con instituciones financieras</li>
+                                <li><strong>Descuentos por pago anticipado:</strong> Hasta 10% de descuento</li>
+                            </ul>
+                            <p>Puedes solicitar información específica en nuestra oficina de becas.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 3 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faq-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#faq-collapseThree" aria-expanded="false" aria-controls="faq-collapseThree">
+                            ¿Puedo transferirme desde otra universidad?
+                        </button>
+                    </h3>
+                    <div id="faq-collapseThree" class="accordion-collapse collapse" 
+                         aria-labelledby="faq-headingThree" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            <p>Sí, aceptamos transferencias de otras instituciones de educación superior. El proceso incluye:</p>
+                            <ul>
+                                <li>Evaluación de tu historial académico</li>
+                                <li>Validación de materias aprobadas</li>
+                                <li>Presentación de documentos oficiales</li>
+                                <li>Entrevista con el comité académico</li>
+                            </ul>
+                            <p>El número de créditos que se pueden convalidar depende de la similitud curricular y el rendimiento académico.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 4 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="faq-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#faq-collapseFour" aria-expanded="false" aria-controls="faq-collapseFour">
+                            ¿Hay opciones de estudio en línea o semi-presencial?
+                        </button>
+                    </h3>
+                    <div id="faq-collapseFour" class="accordion-collapse collapse" 
+                         aria-labelledby="faq-headingFour" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            <p>Ofrecemos dos modalidades de estudio:</p>
+                            <ul>
+                                <li><strong>Presencial tradicional:</strong> Clases diarias en campus</li>
+                                <li><strong>Semi-presencial:</strong> Combinación de clases presenciales (fines de semana) y contenido en línea</li>
+                            </ul>
+                            <p>Actualmente no ofrecemos modalidad 100% en línea para este programa, pero estamos trabajando en su desarrollo para futuras cohortes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Mapa de ubicación -->
+        <section class="mb-5" aria-labelledby="ubicacion-heading">
+            <h2 id="ubicacion-heading" class="mb-4">Ubicación</h2>
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <!-- Mapa accesible -->
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9201.790954341486!2d-71.8589333872113!3d-13.554522297593625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916e7d4c9db42bf5%3A0xe56b22b37c2e89f9!2sUniversidad%20Continental%20-%20Campus%20Cusco!5e1!3m2!1ses!2spe!4v1764910110319!5m2!1ses!2spe" 
+                                width="600" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                aria-label="Mapa interactivo mostrando la ubicación de la facultad">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Cómo llegar</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <span class="material-icons align-middle text-primary me-2" aria-hidden="true">directions_bus</span>
+                                    <strong>En transporte público:</strong><br>
+                                    Líneas de colectivo: 10, 24, 26, 60, 64, 93<br>
+                                    Estación de metro más cercana: Universidad
+                                </li>
+                                <li class="mb-3">
+                                    <span class="material-icons align-middle text-primary me-2" aria-hidden="true">directions_car</span>
+                                    <strong>En auto:</strong><br>
+                                    Estacionamiento disponible para visitantes<br>
+                                    Zona de parquímetros (horario limitado)
+                                </li>
+                                <li class="mb-3">
+                                    <span class="material-icons align-middle text-primary me-2" aria-hidden="true">directions_bike</span>
+                                    <strong>En bicicleta:</strong><br>
+                                    Estacionamiento para bicicletas<br>
+                                    Carriles bici en avenidas cercanas
+                                </li>
+                                <li>
+                                    <span class="material-icons align-middle text-primary me-2" aria-hidden="true">accessible</span>
+                                    <strong>Accesibilidad:</strong><br>
+                                    Acceso para sillas de ruedas<br>
+                                    Estacionamiento para personas con discapacidad
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white py-5" tabindex="-1">
+        <div class="container">
+            <div class="row">
+
+                <!-- Columna 1 -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h3 class="h5">Facultad de Ciencias Sociales</h3>
+                    <p class="small">
+                        Formando agentes de cambio social desde 1995. 
+                        Comprometidos con la excelencia académica y la transformación social.
+                    </p>
+
+                    <!-- Redes sociales corregidas -->
+                    <div class="mt-3 d-flex align-items-center gap-3">
+                        <a href="#" class="text-white fs-4" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white fs-4" aria-label="Twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="text-white fs-4" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white fs-4" aria-label="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna 2 -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="h5">Enlaces rápidos</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50 text-decoration-none">Inicio</a></li>
+                        <li><a href="programa.html" class="text-white-50 text-decoration-none">Programa Académico</a></li>
+                        <li><a href="contacto.html" class="text-white-50 text-decoration-none">Admisión y Contacto</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Biblioteca Digital</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Portal del Estudiante</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3 -->
+                <div class="col-md-4">
+                    <h4 class="h5">Información de contacto</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            Av. Universidad 123, Ciudad Universitaria
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-telephone-fill me-2"></i>
+                            (123) 456-7890
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            info@facultadcsociales.edu
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-clock-fill me-2"></i>
+                            Lunes a Viernes: 8:00 AM - 6:00 PM
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="bg-secondary my-4">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="small mb-0">© 2023 Facultad de Ciencias Sociales. Todos los derechos reservados.</p>
+                </div>
+
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 text-decoration-none small me-3">Política de privacidad</a>
+                    <a href="#" class="text-white-50 text-decoration-none small me-3">Términos de uso</a>
+                    <a href="#" class="text-white-50 text-decoration-none small">Accesibilidad</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/validacion.js"></script>
+    <script src="js/accesibilidad.js"></script>
+</body>
+</html>

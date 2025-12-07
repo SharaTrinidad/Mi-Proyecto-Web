@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nuevo programa académico de la Facultad de Ciencias Sociales">
+    <title>Facultad de Ciencias Sociales - Nuevo Programa Académico</title>
+
+    <!-- SEO / Open Graph -->
+    <meta property="og:title" content="Nuevo Programa Académico - Ciencias Sociales">
+    <meta property="og:description" content="Programa moderno, interdisciplinario y con metodologías innovadoras.">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/accesibilidad.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Favicon -->
+     <link rel="icon" type="image/svg+xml" href="img/imagesvg.svg">
+
+</head>
+
+<body>
+    <!-- Skip link -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" tabindex="-1">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <span class="material-icons" aria-hidden="true">school</span>
+            Facultad Ciencias Sociales
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar menú">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="programa.html">Programa Académico</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Admisión y Contacto</a>
+                </li>
+            </ul>
+
+            <!-- Botones de accesibilidad -->
+            <div class="d-flex align-items-center ms-lg-3 gap-2 mt-3 mt-lg-0">
+
+                <!-- Alto contraste -->
+                <button id="altoContraste" class="btn btn-outline-light" aria-label="Activar alto contraste">
+                    <span class="material-icons" aria-hidden="true">contrast</span>
+                </button>
+
+                <!-- Modo dislexia -->
+                <button id="modoDislexia" class="btn btn-outline-light" aria-label="Activar modo dislexia">
+                    <span class="material-icons" aria-hidden="true">font_download</span>
+                </button>
+
+                <!-- Reducir animaciones -->
+                <button id="reducirAnimaciones" class="btn btn-outline-light" aria-label="Reducir animaciones">
+                    <span class="material-icons" aria-hidden="true">motion_photos_off</span>
+                </button>
+
+                <!-- Zoom de texto -->
+                <button id="zoomTexto" class="btn btn-outline-light" aria-label="Aumentar tamaño del texto">
+                    <span class="material-icons" aria-hidden="true">zoom_in</span>
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="main-content" class="container mt-5 pt-4" tabindex="-1">
+
+        <!-- CARRUSEL -->
+        <section aria-labelledby="carousel-heading" role="region">
+            <h2 id="carousel-heading" class="visually-hidden">Presentación del programa académico</h2>
+
+            <div id="carruselPrincipal" class="carousel slide mb-5" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Diapositiva 1"></button>
+                    <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="1"
+                        aria-label="Diapositiva 2"></button>
+                    <button type="button" data-bs-target="#carruselPrincipal" data-bs-slide-to="2"
+                        aria-label="Diapositiva 3"></button>
+                </div>
+
+                <div class="carousel-inner rounded">
+                    <div class="carousel-item active">
+                        <img src="img/img1.jpg" class="d-block w-100" loading="lazy"
+                            alt="Estudiantes colaborando en un proyecto de ciencias sociales">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                            <h3>Nuevo Programa Académico</h3>
+                            <p>Formamos profesionales para los desafíos sociales del siglo XXI</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/img2.jpg" class="d-block w-100" loading="lazy"
+                            alt="Profesor enseñando en un aula con herramientas tecnológicas">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                            <h3>Metodologías Innovadoras</h3>
+                            <p>Aprendizaje basado en proyectos y análisis aplicado</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/img3.jpg" class="d-block w-100" loading="lazy"
+                            alt="Grupo diverso de estudiantes trabajando juntos">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                            <h3>Perspectiva Interdisciplinaria</h3>
+                            <p>Integramos sociología, antropología y políticas públicas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselPrincipal"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselPrincipal"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN BIENVENIDA -->
+        <section class="mb-5" aria-labelledby="bienvenida-heading" role="region">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 id="bienvenida-heading" class="display-4 text-primary mb-4">
+                        Transformando la Comprensión Social
+                    </h1>
+                    <p class="lead">
+                        Presentamos un programa diseñado para formar profesionales capaces de analizar,
+                        interpretar y transformar la realidad social contemporánea.
+                    </p>
+                    <p>
+                        Nuestro enfoque interdisciplinario combina teoría sólida con aplicación práctica
+                        para enfrentar los desafíos del mundo actual.
+                    </p>
+                    <a href="programa.html" class="btn btn-primary btn-lg mt-3">Conoce nuestro programa</a>
+                </div>
+
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <img src="img/img4.jpg" class="img-fluid rounded shadow" loading="lazy"
+                        alt="Estudiantes participando en un debate académico">
+                </div>
+            </div>
+        </section>
+
+        <!-- CARACTERÍSTICAS DESTACADAS -->
+        <section class="mb-5" aria-labelledby="caracteristicas-heading" role="region">
+            <h2 id="caracteristicas-heading" class="text-center mb-5">¿Por qué elegir nuestro programa?</h2>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm" role="article">
+                        <div class="card-body text-center">
+                            <div class="icono-destacado mb-3">
+                                <span class="material-icons">groups</span>
+                            </div>
+                            <h3 class="h5 card-title">Enfoque Multidisciplinario</h3>
+                            <p class="card-text">Integramos sociología, antropología, psicología y ciencias políticas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm" role="article">
+                        <div class="card-body text-center">
+                            <div class="icono-destacado mb-3">
+                                <span class="material-icons">work</span>
+                            </div>
+                            <h3 class="h5 card-title">Vinculación Laboral</h3>
+                            <p class="card-text">Convenios con más de 50 organizaciones para prácticas profesionales.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm" role="article">
+                        <div class="card-body text-center">
+                            <div class="icono-destacado mb-3">
+                                <span class="material-icons">public</span>
+                            </div>
+                            <h3 class="h5 card-title">Perspectiva Global</h3>
+                            <p class="card-text">Intercambios internacionales y análisis de problemáticas globales.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm" role="article">
+                        <div class="card-body text-center">
+                            <div class="icono-destacado mb-3">
+                                <span class="material-icons">biotech</span>
+                            </div>
+                            <h3 class="h5 card-title">Metodologías Innovadoras</h3>
+                            <p class="card-text">Uso de análisis de datos y tecnologías emergentes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="bg-light p-5 rounded mb-5 text-center" aria-labelledby="cta-heading" role="region">
+            <h2 id="cta-heading" class="mb-4">¿Listo para transformar tu futuro?</h2>
+            <p class="lead mb-4">
+                Únete a nuestra comunidad académica y forma parte del cambio social que el mundo necesita.
+            </p>
+
+            <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+                <a href="contacto.html" class="btn btn-primary btn-lg">Solicita información</a>
+                <a href="programa.html" class="btn btn-outline-primary btn-lg">Explora el plan de estudios</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-5" tabindex="-1">
+        <div class="container">
+            <div class="row">
+
+                <!-- Columna 1 -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h3 class="h5">Facultad de Ciencias Sociales</h3>
+                    <p class="small">
+                        Formando agentes de cambio social desde 1995. 
+                        Comprometidos con la excelencia académica y la transformación social.
+                    </p>
+
+                    <!-- Redes sociales corregidas -->
+                    <div class="mt-3 d-flex align-items-center gap-3">
+                        <a href="#" class="text-white fs-4" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white fs-4" aria-label="Twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="text-white fs-4" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white fs-4" aria-label="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna 2 -->
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="h5">Enlaces rápidos</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50 text-decoration-none">Inicio</a></li>
+                        <li><a href="programa.html" class="text-white-50 text-decoration-none">Programa Académico</a></li>
+                        <li><a href="contacto.html" class="text-white-50 text-decoration-none">Admisión y Contacto</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Biblioteca Digital</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Portal del Estudiante</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3 -->
+                <div class="col-md-4">
+                    <h4 class="h5">Información de contacto</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            Av. Universidad 123, Ciudad Universitaria
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-telephone-fill me-2"></i>
+                            (123) 456-7890
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            info@facultadcsociales.edu
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-clock-fill me-2"></i>
+                            Lunes a Viernes: 8:00 AM - 6:00 PM
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="bg-secondary my-4">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="small mb-0">© 2023 Facultad de Ciencias Sociales. Todos los derechos reservados.</p>
+                </div>
+
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 text-decoration-none small me-3">Política de privacidad</a>
+                    <a href="#" class="text-white-50 text-decoration-none small me-3">Términos de uso</a>
+                    <a href="#" class="text-white-50 text-decoration-none small">Accesibilidad</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Región aria-live (para lectores de pantalla) -->
+    <div id="region-live" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/validacion.js"></script>
+</body>
+</html>

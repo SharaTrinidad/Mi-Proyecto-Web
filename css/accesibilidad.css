@@ -1,0 +1,140 @@
+/* ESTILOS ESPECÍFICOS PARA MEJORAR LA ACCESIBILIDAD */
+
+/* MODO ALTO CONTRASTE */
+.alto-contraste {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+.alto-contraste .navbar,
+.alto-contraste .card,
+.alto-contraste footer {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+.alto-contraste .bg-light,
+.alto-contraste .bg-primary {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+.alto-contraste .btn-primary {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+}
+
+.alto-contraste a {
+    color: #ffff00 !important; /* Amarillo accesible WCAG */
+}
+
+.alto-contraste .text-primary {
+    color: #ffffff !important;
+}
+
+.alto-contraste img {
+    filter: grayscale(100%) contrast(120%) !important;
+}
+
+.alto-contraste .form-control,
+.alto-contraste .form-select {
+    background-color: #111 !important;
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+/* TIPOGRAFÍA PARA DISLEXIA  */
+.fuente-dislexia {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial Rounded MT Bold', sans-serif;
+    letter-spacing: 0.05em;
+    line-height: 1.8;
+}
+
+.fuente-dislexia p,
+.fuente-dislexia input,
+.fuente-dislexia select,
+.fuente-dislexia textarea,
+.fuente-dislexia label,
+.fuente-dislexia li {
+    letter-spacing: 0.055em;
+}
+
+/* REDUCIR ANIMACIONES */
+.reducir-animaciones *,
+.reducir-animaciones *::before,
+.reducir-animaciones *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+}
+
+/* Eliminación de efectos hover intensos */
+.reducir-animaciones a:hover,
+.reducir-animaciones button:hover {
+    transform: none !important;
+}
+
+/* Detener carruseles de Bootstrap */
+.reducir-animaciones .carousel,
+.reducir-animaciones .carousel-item {
+    transition: none !important;
+}
+
+/* ZOOM DE TEXTO */
+.texto-zoom {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+.texto-zoom h1,
+.texto-zoom h2,
+.texto-zoom h3 {
+    font-size: 1.15em;
+}
+
+/* FOCUS VISIBLE */
+:focus {
+    outline: 3px solid #ff9900 !important;
+    outline-offset: 2px !important;
+}
+
+button:focus,
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    box-shadow: 0 0 0 3px rgba(255, 165, 0, 0.7) !important;
+}
+
+/* SKIP LINK (ACCESO RÁPIDO A CONTENIDO) */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    z-index: 9999;
+    border-radius: 5px;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 10px;
+    outline: 3px solid #ff9900 !important;
+}
+
+/* OCULTAR VISUALMENTE (PERO ACCESIBLE) */
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
